@@ -1,0 +1,37 @@
+// different type of defined string in java language
+public class A {
+ public static void main  (String[]args){
+              
+  String a="sikha";
+  String b="SHIV";
+ 
+    System.out.println(a.toUpperCase()); 
+    System.out.println(b.toLowerCase());
+
+    System.out.println(a.concat(" " +b));
+    System.out.println(b.concat( a));
+
+    System.out.println(a.charAt(3));
+    System.out.println(b.indexOf('H'));
+
+    System.out.println(a.replace('s','D' ));
+    System.out.println(b.length());
+
+    String c= "    ram prakash  " ;
+    String d="";
+  System.out.println(c.trim());
+  System.out.println(d.isEmpty());
+}}
+
+/* 
+SIKHA
+shiv
+sikha SHIV
+SHIVsikha
+h
+1
+Dikha
+4
+ram prakash
+true
+*/

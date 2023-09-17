@@ -1,0 +1,33 @@
+
+
+
+
+                //  SIMPLE INHERITANCE
+                    class A{
+                      int roll,marks;
+                      String name;
+                      void input(){
+                     System.out.println("enter the roll , marks , and name");};
+                    }
+                      class B extends A{
+                        void output(){
+                        roll =23;
+                        marks=234;
+                        name="shiv";
+                        System.out.println(roll +" " + marks+ " "+  name);}
+                        public static void main(String[] args) {
+                          
+                          
+                          B r1=new B();
+                          r1.input();
+                          r1.output();
+                          
+                          
+                        }
+                    
+                      }
+                      
+                    
+                      
+                    
+                    

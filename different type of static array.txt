@@ -1,0 +1,18 @@
+// different type of static array 
+import java.util.Arrays;
+class array{
+  public static void main(String[]args){
+  
+    // size=sc.nextInt();
+    String a[]={"atul","lavkush"," jayprakash","neeraj","indra"};
+    System.out.println("toString()>>>>>>>"+Arrays.toString(a));
+    System.out.println("asList()>>>>>>"+Arrays.asList(a));
+    int arr[][]={{2,4},{56,5},{35,56}};
+    System.out.println("deepToString()"+Arrays.deepToString(arr));
+
+    
+      
+
+    }
+    
+  }

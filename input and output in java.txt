@@ -1,0 +1,16 @@
+import java.util.Scanner;// scane kar rahe hai aur iss ko nahi likha to  error dega
+
+class Test
+{   
+    public static void main(String[] args) {
+        int a,b;
+        System.out.print("enter data ");
+        Scanner obj=new Scanner(System.in);//yaha par obj ek storage hai jo ki type of variable ko store karta hai for examaple int
+         a=obj.nextInt();// yaha par type of variable(int) ko call kiya ja raha hai by obj and its value
+         b=obj.nextInt();
+        System.out.print("Get data ");// yaha par (+) a and b ki valu ko attached kar dega Get data ke saath
+        System.out.print(a+" "+b); 
+
+        }
+}
+       

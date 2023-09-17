@@ -1,0 +1,57 @@
+                                 /* MULTIPLE CATCH BLOCK */
+
+
+                    //  class flipkart{
+                    //     public static void main(String[] args) {
+                    //         try {
+                    //            exception :1;
+                    //            exception :2;
+                    //            exception :3;
+                    //            exception :4;
+                    //            } 
+                    //         catch (Exception:1(name) e) {
+                    //             // TODO: handle exception
+                    //             }
+                    //         catch(Exception:2(name) e){
+                    //                 // TODO: handle exception
+                    //         }
+                    //         catch(Exception:3(name) a){
+                    //                 // TODO: handle exception
+                    //         }
+                    //         catch(Exception b){  // yahi sabhi type ke exception ko handle kar sakta hai
+                    //                             //while working with multiple catch block the SUPER CLASS exception catch block must be at the last catch block
+                    //                      // TODO: handle exception
+                    //         }
+                    //     }
+                    // }
+class B{
+    public static void main(String[] args) {
+        try {
+            int a=10,b=2,c;
+            c=a/b;
+            System.out.println(c); // AGAR EK EXCPTION AA JA RAHA HAI TAB  USKO HANDLE KARNE KE BAAD AAGE A CODE RUN NAHI HOGA 
+
+            int d[]={10,20,30,40};
+            System.out.println(d[4]);
+
+            String str= null;
+            System.out.println(str.toUpperCase());
+        } 
+        catch (ArithmeticException e) {
+            System.out.println(" we can't devide any no. by zero ");
+        }
+        catch (ArrayIndexOutOfBoundsException f) {
+            System.out.println(" out of array limit ");
+        }
+        catch (NumberFormatException g) {
+            System.out.println(" we can't devide any no. by zero ");
+        }
+        catch(Exception h){
+            System.out.println("TYPE OF EXCEPTION IS  NullPointerException  ");
+        }
+    }
+}
+/* 
+  OUTPUT:
+     5
+     out of array limit  */

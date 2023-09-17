@@ -1,0 +1,27 @@
+// TO check wether given year is leap year or not
+// CONDITION FOR LEAP YEAR
+// century(100%==0 && 400%==0)>>>>>>>>>>>>>>>>>>>>>>EX.
+//yearly(100%!=0,4%==0)>>>>>>>>>>>>>>>>>>>>>>>>>>EX.
+import java.util.Scanner;
+
+
+
+class triangle{// file name kuchh bhi ho sakta hai 
+    public static void main(String[] args){
+        int year;
+       
+        System.out.print(" : enter any year : ");
+        Scanner sc =new Scanner(System.in);
+      year=sc.nextInt();
+      if(year%100==0 && year%400==0 || year%100!=0 && year%4==0){
+        System.out.print(" : leap year: ");
+
+      }
+      else{
+        System.out.print(" :not leap year : ");
+      }
+
+     
+
+    }
+}

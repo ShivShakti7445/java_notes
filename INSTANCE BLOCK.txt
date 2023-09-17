@@ -1,0 +1,49 @@
+// INSTANCE BLOCK
+class A{
+  int a;double b;
+ /*
+ static  void show(){
+  a=2345;b=3446.4564;         //static method instance variable ko call nahi karta hai 
+  System.out.println(a+" "+b);
+
+  }*/
+  static  void show(){
+       
+    System.out.println("learn coding");
+  
+    }
+  
+  void print(){
+    a=23;b=23.56;
+    System.out.println(a+" "+b);
+  }
+  {
+    a=3445;b=34.5658;
+    System.out.println(a+" "+b);
+  }
+  A(){
+    a=12;b=346.546;
+    System.out.println(a+" "+b);
+  }
+  }
+ 
+  
+  class B{
+    public static void main(String[] args) {
+      
+      A r=new A();
+      r.show();
+      r.print();
+      //r.show();
+    
+      
+    } 
+
+  }
+/*
+learn coding
+3445 34.5658    >>>>>>>>>>>>>>   (sabse pahle instance block call hota hai)
+12 346.546      >>>>>>>>>>>>>>   (phir default constructor hota hai call)
+23 23.56        >>>>>>>>>>>>>>    ( than koi method call hota hai)
+learn coding    >>>>>>>>>>>>>     (static method ko jaha chahe waha par call kar skete as accordind to our need par phir bhi isse pahle instance block and default constructor hi  call honge)
+ */

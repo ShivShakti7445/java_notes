@@ -1,0 +1,21 @@
+// CONCEPT OF METHOD
+
+
+class A{
+    public static void  add(){
+        int a=23,b=67;
+        System.out.print(" sum : "+(a+b)+"\n");
+    }
+     void ran(){
+        
+        System.out.print(" my name is shiv ");
+    }
+    
+    public static void main( String [] args){
+        A.add();
+        A r=new A();
+        r.ran();
+      
+    }}
+
+      

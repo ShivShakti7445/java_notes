@@ -1,0 +1,36 @@
+                /*           NESTED CATCH BLOCK */
+
+class  flipkart{
+    public static void main(String[] args) {
+        
+    
+    try{
+        System.out.println("JAI SHREE RAM");
+        try{
+           
+            System.out.println(10/0);
+        }
+        catch(Exception e){
+            System.out.println(e);
+            try {String a=null ; //>>>>>>>>>>case2;  ---   //(a="string">>>>>>>>>case 1)
+                System.out.println(a.toUpperCase());
+            } catch (NullPointerException d) {
+                System.out.println("you can convert given string to upper case");
+            }            
+        }
+    }
+    catch(Exception f){
+        System.out.println("ram prakash");
+
+    }
+}}
+/* output of case:1
+JAI SHREE RAM
+java.lang.ArithmeticException: / by zero
+SHIV SHAKTI
+ */
+
+ /* output of case:2
+JAI SHREE RAM
+java.lang.ArithmeticException: / by zero
+you can convert given string to upper case */

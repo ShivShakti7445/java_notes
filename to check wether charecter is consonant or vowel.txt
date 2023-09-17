@@ -1,0 +1,24 @@
+
+// to check wether charecter is consonant or vowel
+
+import java.util.Scanner;
+ class oddandeven{
+    public static  void main(String[] args){
+        Character ch;
+        System.out.print("enter the value of character :");
+        Scanner sc=new Scanner(System.in) ;
+        ch=sc.next().charAt(0);
+        
+        if(ch==  'a' || ch=='e'||ch=='i'||ch=='o'||ch=='u'){
+            System.out.print("your character is vowel : "+ch);
+        }
+      else{
+        System.out.print("your character is consonant : "+ch);
+    }
+      }
+       
+
+
+    }
+    
+

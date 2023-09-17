@@ -1,0 +1,24 @@
+//SIMPLE IF STATEMENT
+import java.util .Scanner;
+class simpleifstatement{
+    public static void main(String [] args){
+        int age;
+        System.out.println("enter the value of age ");
+        Scanner sc =new Scanner(System.in);
+        age=sc.nextInt();
+        if(age>=18){
+  
+       System.out.println("you are eligible for vote ");
+       
+    // System.out.println("you are  not eligible for vote");
+    }
+    
+    System.out.println("thanks you .....! ");
+
+
+ 
+
+
+
+    }
+}

@@ -1,0 +1,61 @@
+                            // BLC && ELC programme
+
+// Exampe of BLC
+      1.(amazon.java)
+class amazon{
+    int a,b,c,d;
+    void input(){
+        a=20;
+       b=24;
+    }
+    void output(){
+        c=a+b;
+        d=a-b;
+        System.out.println(" sum is : "+c);
+        System.out.println(" sub. is : "+d);
+    }
+    
+}
+    2.( flipkart.java)
+class flipkart{
+int a,b,c,d;
+void input(){
+    a=12;b=23;
+
+}
+void output(){
+    c=a*b;
+    d=c%b;
+    System.out.println("mul. is : "+c);
+    System.out.println("rem. is : "+d);
+}
+}
+
+example of ELC  {A.java}
+
+class A {
+ public static void main  (String[]args){
+  int e=44; int f=12; int g;
+  g=e/f;
+    System.out.println("div. is : "+g);
+
+  amazon r=new amazon();
+  r.input();
+  r.output();
+  flipkart s=new flipkart();
+  s.input();
+  s.output();
+              
+}}
+              // out put
+
+/*
+ div. is : 3
+ sum is : 44
+ sub. is : -4
+mul. is : 276
+rem. is : 0
+
+ */
+
+

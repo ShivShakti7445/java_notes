@@ -1,0 +1,142 @@
+import openai
+import pyttsx3
+import speech_recognition as sr
+import pyaudio
+
+openai.api_key ="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"
+model_engine="text-davinci-003"
+r = sr.Recognizer()
+
+def SpeakText(command):
+    engine = pyttsx3.init()
+    engine.say(command)
+    print(command)
+    engine.runAndWait()
+
+# while (1):
+x=1
+while (x==1):
+    try:
+        with sr.Microphone() as source2:
+            r.adjust_for_ambient_noise(source2, duration=0.2)
+            print("say something")
+            audio2 = r.listen(source2, phrase_time_limit=10)
+            print("wait my friend")
+            MyText = r.recognize_google(audio2)
+            MyText = MyText.lower()
+            completion = openai.Completion.create(engine=model_engine, prompt =MyText, max_tokens =1024, temperature =0.5, n=1, stop =None)
+            response = completion.choices[0].text
+            SpeakText(response)
+    except sr.RequestError as e:
+        print("Could not request results; {0}".format(e))
+    except sr.UnknownValueError:
+        print("unknown error occurred")
+    x+=1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import openai
+import pyttsx3
+import speech_recognition as sr
+import pyaudio
+
+openai.api_key ="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"
+model_engine="text-davinci-003"
+r = sr.Recognizer()
+
+def SpeakText(command):
+    engine = pyttsx3.init()
+    engine.say(command)
+    print(command)
+    engine.runAndWait()
+
+# while (1):
+x=1
+while (x==1):
+    try:
+        with sr.Microphone() as source2:
+            r.adjust_for_ambient_noise(source2, duration=0.2)
+            print("say something")
+            audio2 = r.listen(source2, phrase_time_limit=10)
+            print("wait my friend")
+            MyText = r.recognize_google(audio2)
+            MyText = MyText.lower()
+            completion = openai.Completion.create(engine=model_engine, prompt =MyText, max_tokens =1024, temperature =0.5, n=1, stop =None)
+            response = completion.choices[0].text
+            SpeakText(response)
+    except sr.RequestError as e:
+        print("Could not request results; {0}".format(e))
+    except sr.UnknownValueError:
+        print("unknown error occurred")
+    x+=1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

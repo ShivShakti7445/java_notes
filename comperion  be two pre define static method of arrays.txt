@@ -1,0 +1,48 @@
+
+          
+      // comperion b/w "=="&"equals()"
+
+
+       import java.util.Scanner;
+       import java.util.Arrays;
+        class ASCII{//class name kuchh bhi le sakte hai
+           public static  void main(String[] args){
+            int i;
+            int a[]= new int[5];
+             System.out.print("enter the element of a[] array......");
+             Scanner sc=new Scanner(System.in);      
+              for( i=0;i<5;i++)
+             for(i=0;i<a.length;i++)
+             {
+          a[i]=sc.nextInt();
+             }
+            int b[]= new int[5];
+             System.out.print("enter the element of b[] array......");
+             for( i=0;i<5;i++)
+        for(i=0;i<a.length;i++)
+             {
+          b[i]=sc.nextInt();
+             }
+            
+        boolean c =Arrays.equals(a,b);//"equals()" ka concept arrays ke element ko compare karta hai dusare array se
+        System.out.print("kya dono arrays same hai:  "+c);
+        System.out.print("\n");
+ if(a==b)//"==" iska concept kewal array a , b ke referece se hai
+ {
+   System.out.print("kya dono arrays same hai : HAA ");
+ }
+ else{  System.out.print("kya dono arrays same hai : NAA ");}
+
+           
+           
+           
+            }
+        }
+     
+            
+             
+           
+               
+    
+    
+

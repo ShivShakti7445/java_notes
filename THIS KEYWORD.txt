@@ -1,0 +1,102 @@
+
+                    //         THIS KEYWORD
+
+
+                     //      point no. : 1
+
+
+                    // class A{
+                    //   void input(){
+                        
+                    //     System.out.println(this);
+                    //   }}
+                    
+                    
+                    
+                    // class B {
+                    //   public static void main(String[] args) {
+                        
+                    //     A r1 =new A();
+                    //      r1.input();
+                    //      System.out.println(r1);
+                       
+                    // }}
+                        /*
+                            output:
+                            A@3fee733d
+                            A@3fee733d
+                         */
+
+                    /***************************************************************************************************************** */
+                     
+                                     // type :2
+                    // class B{
+                    //   int a;  // instance variable 
+                    //  B(int a)/*local variable*/{
+                    //      a=a; // isse (this keyword ) ham jo bhi value a me denge o local variable me aa jayega 
+                    //                // agar yaha par (this keyword) nahi use karenge to a ka  output a ka default value 0 print hoga
+                    //   }
+                    //   void show(){
+                    //     System.out.println(a);}
+                    //     public static void main(String[] args) {
+                        
+                    //       B r1 =new B(12);
+                    //       r1.show();
+                    //     }}
+                      
+                    
+                    
+                    
+                   
+                       /*
+                        output :
+                                12( when i was use this keyword )
+                                0( when i was  not use this keyword )
+                        */
+                  
+                    /***************************************************************************************************** */
+
+                    //                type :3
+                    // class B{
+                      
+                    //  B(){ //default constructor  
+                    //       System.out.println(" SHIV SHAKTI");
+                    //   }
+                    //    B(int a){ //parametrized  constructor
+                    //     //this();
+                    //     System.out.println(a);}
+                    //     public static void main(String[] args) {
+                        
+                    //       B r1 =new B(12);
+                          
+                    //     }}
+                      /*
+                        output:
+                         {SHIV SHAKTI   >>>>>>>>>>>>  when be  use this keyword 
+                         12}
+                         12 >>>>>>>>>>>>>>  when be  not use this keyword 
+                       */
+                    
+                    /**************************************************************************************************************** */
+
+                    
+                    
+                    class B{
+                       B(){
+                        //this(123);
+                        System.out.println(" this is ]]]]]]]]]");
+                       }
+                        B(int a){ //parametrized  constructor
+                         //this();
+                         System.out.println(a);}
+                       public static void main(String[] args) {
+                         
+                          B r=new B();
+                           
+                         }}
+                         /*
+                           123
+                           this is ]]]]]]]]] >>>>>>>>>>    when be  use this keyword 
+                           this is ]]]]]]]]]  >>>>>>>>>>>>>>  when be  not use this keyword 
+
+                          */

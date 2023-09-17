@@ -1,0 +1,86 @@
+                                                /* POLYMORPHISMS  */
+                        
+/********************************* TYPE:1 >> compile time polymorphisms**********************/
+class B{
+   /*void add(){  //                 case :1  >>>>>>>>>>>> default method haiving return value void
+    int a=23;int b=12;
+    int c=a+b;
+    System.out.println(c);
+   }*/
+   int add(){//                      case:2 >>>>>>>>>>>>>>>>>>> default method haiving return value int
+    int a=100;int b=200;
+    int c=a+b;
+    return c;
+   }
+   void add(int a,int b){
+    
+    int c=a+b;
+    System.out.println(c);
+   }
+   void add(int a,double b){
+    
+    double c=a+b;
+    System.out.println(c);
+
+   }
+   void add(double a,double b){
+    
+    double c=a+b;
+    System.out.println(c);
+   }
+   public static void main(String[] args) {
+    B r=new B();
+    int add=r.add(); System.out.println(add); r.add(123,34);  r.add(123,12.45);  r.add(12.45, 56.78); 
+
+   }
+}
+/*
+35  >>>>>>>>>> case :1
+300 >>>>>>>>>> case :2
+157
+135.45
+69.23
+ */
+
+/********************************* TYPE:2 >>  runtime polymorphisms**********************/
+
+class A{
+  void ram(){
+ System.out.print("i am not your brother");
+  }
+}
+
+//        CASE :1 >>>>> when both have same method name then compiler call to method of sub class */
+
+//  /*class C extends A{
+//  @Override
+// // iss se kewal  ye pata chalta hai ki hamara class/program overriding hai ,,,, isse likh dwne se koi bhi effect nahi padat a hai
+//   void ram()/*(case :1 >>>>> when both have same method name then compiler call to method of sub class )*/
+// {
+//   System.out.print("i am your brother");
+// }}
+
+
+
+   //          CASE :2 >>>>> when both could not have same method name then compiler call to method of sub class
+
+  class C extends A{
+    void shiv(){
+      System.out.print("i am your brother");
+    }
+  }
+class B{
+   public static void main(String[] args) {
+    C r=new C();
+    r.ram();
+
+  }
+}
+
+/*   output:::
+i am your brother  >>>>>>>>>>>>>>>>>> output of case :1
+i am not your brother >>>>>>>>>>>>>>> out put of case :2
+
+
+
+ */

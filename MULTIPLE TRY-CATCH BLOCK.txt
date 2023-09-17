@@ -1,0 +1,25 @@
+               //           MULTIPLE TRY-CATCH BLOCK { this concept is used when we have more than one exception in our code }
+public class B {
+    public static void main(String[] args) {
+        try { int a=23,b=0,c;
+            c=a/b;
+            System.out.println(c);
+            
+        } catch (ArithmeticException e) {
+            System.out.println("can't devide by zero");
+        }
+        try {
+            int a[]={1,2,3,4,5};
+            System.out.print(a[5]);
+            
+        } catch (ArrayIndexOutOfBoundsException c) {
+            System.out.println("beyond the array limit");
+            
+        }
+    }  //  output:
+    /* can't devide by zero
+       beyond the array limit 
+       */
+
+    
+}

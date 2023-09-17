@@ -1,0 +1,22 @@
+// ADDATION OF TWO NO.
+
+import java.util.Scanner;
+class additionoftwono{
+    public static void main( String [] args){
+       int a,b,sum;
+        System.out.println("enter first integer :");
+        Scanner sc=new Scanner(System.in);
+        a=sc.nextInt();
+        System.out.println("enter second integer :");
+        
+        //Scanner sc=new Scanner(System.in);
+        b=sc.nextInt();
+        sum=a+b;
+        System.out.print("sum is : " +sum);
+        
+
+    }
+    }
+
+
+ 

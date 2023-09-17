@@ -1,0 +1,56 @@
+// java programme to search an element of  an array
+       import java.util.Scanner;
+        class ASCII{//class name kuchh bhi le sakte hai
+           public static  void main(String[] args){
+            int i,n,cout = 0;
+             int a[]= new int[5];
+             System.out.print("enter the element of a[] array......");
+             Scanner sc=new Scanner(System.in);
+             for( i=0;i<5;i++){
+             a[i]=sc.nextInt();
+             }
+             System.out.print(" element of the array are : ");
+             for( i=0;i<5;i++){
+              System.out.print(a[i]+" ");
+            
+            
+           
+             
+            
+             }
+             System.out.print("\n");
+             System.out.print("enter search element: "  ); 
+             n=sc.nextInt();
+
+             for( i=0;i<5;i++){
+            if(a[i]==n){
+              cout++;
+            }
+            
+            
+           
+             
+            
+             }
+             if(cout>0){
+              System.out.print(" search element is found ");
+             }
+             else{
+              System.out.print(" search element is not found ");
+             }
+
+             }
+             
+
+
+
+
+             }
+
+            
+             
+           
+               
+    
+    
+

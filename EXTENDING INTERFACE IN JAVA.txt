@@ -1,0 +1,44 @@
+           /*         EXTENDING INTERFACE IN JAVA                            */
+import java.util.Scanner;
+interface ram{
+    void add();
+}
+interface shiv extends ram{
+    void sub();
+}
+class munna implements shiv{
+    Scanner s=new Scanner(System.in);
+    @Override
+    public void add(){
+        int a,b,add;
+         Scanner s=new Scanner(System.in);
+         System.out.print("enter your no. : ");
+         a =s.nextInt();
+         b=s.nextInt();
+        add = a+b;
+        System.out.print("ram ka output :"+add);
+    }@Override
+    public void sub(){
+        int a,b,sub;
+         Scanner s=new Scanner(System.in);
+         System.out.println("enter your no. :");
+         a =s.nextInt();
+         b=s.nextInt();
+         sub = a-b;
+        System.out.println("shiv ka output :"+ sub);
+    }}
+    class B{
+    public static void main(String[] args) {
+        munna m=new munna();
+        //m.sub();
+        m.add();
+
+    }}
+/*
+enter your no. :
+ 23 45
+shiv ka output :-22
+enter your no. : 34
+56
+ram ka output :90
+ */

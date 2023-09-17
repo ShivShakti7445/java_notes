@@ -1,0 +1,41 @@
+     // EXCEPTIONAL HANDLING 
+// class B{
+//     public static void main(String[] args) {
+        
+//      System.out.println(" main method started");
+//         int a=10,b=0,c;
+//         c=a/b;//yaha par exception show karega jiske baad aage ka  code execute nahi hoga yani last tak execute nahi hoga 
+//         System.out.println(c);
+//         System.out.println(" main method ended");
+//     }
+// }
+/*main method started
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+        at B.main(B.java:6)
+PS C:\Users\shiv1\OneDrive\Desktop\java> 
+ */
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+ 
+   
+  // EXCEPTIONAL HANDLING SE HAM APNE PROGRAME KO LAST TAK EXECUTE KARWA SAKTE HAI 
+ class B{
+    public static void main(String[] args) {
+        
+     System.out.println(" main method started");
+        int a=10,b=0,c;
+         try{// jaha paaaaar exception de raha use ham try block me daal denge 
+            c=a/b;//yaha par exception show karega jiske baad aage ka  code execute nahi hoga
+        System.out.println(c);
+    }
+    
+        
+    catch (Exception e) {// catch block  ham ye bata sakte hai ki hamara exception kis type ka hai  for ex. arithmatic type 
+        System.out.println(e);
+    }
+        System.out.println(" main method ended");
+    }
+}
+
+/*main method started
+java.lang.ArithmeticException: / by zero >>>>> catch block ke wajah se ham pata laga pa rahe hai type of exception 
+ main method ended >>>>>>>>>>>>>>>>  by this output we can say our programme run up to last code */

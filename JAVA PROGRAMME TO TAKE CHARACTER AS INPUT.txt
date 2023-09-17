@@ -1,0 +1,18 @@
+
+//JAVA PROGRAMME TO TAKE CHARACTER AS INPUT
+
+
+import java.util.Scanner;
+ class oddandeven{
+    public static  void main(String[] args){
+        Character ch;
+        System.out.print("enter the value of character :");
+        Scanner sc=new Scanner(System.in) ;
+        ch=sc.next().charAt(3);//yaha par 3 ye bata raha ki jo bhi character me (for example SHAKTI) 3 position par hoga wahi print hoga i.e "K",START CHARETER KA POSITION 0 SE HOTA HAI
+        System.out.print("your character is : "+ch);
+       
+
+
+    }
+    
+}

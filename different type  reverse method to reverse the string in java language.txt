@@ -1,0 +1,28 @@
+// different type  reverse method to reverse the string in java language
+public class A {
+ public static void main  (String[]args){
+  //          type : 1
+      StringBuffer r=new StringBuffer(" SHIV SHAKTI") ;
+        System.out.print(r.reverse()) ;  
+        System.out.print("\n") ; 
+
+        //          type : 2
+        StringBuilder ref=new StringBuilder(" SHAKTI") ;//reverse() ek object hai jo dono mai define hai StringBuilder() and StringBuffer()
+        System.out.print(ref.reverse()) ;  
+        System.out.print("\n") ; 
+
+        //        type :3
+   int l,i;
+   String r1="ram prakash";
+   String r2="";
+   l=r1.length();
+   for(i=(l-1);i>=0;i--){
+    r2=r2+r1.charAt(i);
+   }
+   System.out.print(r2);
+}}
+/*
+ITKAHS VIHS 
+ITKAHS 
+ram prakashr
+ */

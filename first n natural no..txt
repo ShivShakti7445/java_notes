@@ -1,0 +1,21 @@
+// first n natural no.
+
+import java.util.Scanner;
+class firstnnaturalno{
+    public static void main( String [] args){
+       int n;
+        System.out.println("inter the value of n :");
+        Scanner sc=new Scanner(System.in);
+        n=sc.nextInt();
+        for(int i=1;i<=n;i++){
+            System.out.print(i+" ");
+
+        }
+      
+    
+
+    }
+    }
+
+
+ 

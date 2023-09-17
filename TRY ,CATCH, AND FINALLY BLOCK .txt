@@ -1,0 +1,134 @@
+                                     /* TRY ,CATCH, AND FINALLY BLOCK */        
+                                   // CASE :1 //
+
+
+// public class B {
+//     public static void main(String[] args) {
+//         try {
+//             System.out.println("ram prakash");
+//             int a=10,b=5,c;
+//             c=a/b;
+//             System.out.println(c);
+//             System.out.println("shiv shakti");
+//         } catch ( NullPointerException e) {
+//             System.out.println(" you can not devide any no. by zero");
+            
+//         }
+//         finally{// security code likh jata hai
+//             System.out.println("jagnarayan singh ");
+//         }
+//         System.out.println("my programe ended ");
+//     }
+
+    
+// }// output of case no: 1
+
+/* ram prakash >>>>>>> statement 1
+2  >>>>>>> statement 2
+shiv shakti  >>>>>>> statement 3
+jagnarayan singh >>>>>>> statement 5
+my programe ended>>>>>>> statement 6*/
+
+
+
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+
+                                       // CASE :2//
+
+// public class B {
+//     public static void main(String[] args) {
+//         try {
+//             System.out.println("ram prakash");
+//             int a=10,b=0,c;
+//             c=a/b;
+//             System.out.println(c);
+//             System.out.println("shiv shakti");
+//         } catch (Exception e) {
+//             System.out.println(" you can not devide any no. by zero");
+            
+//         }
+//         finally{// security code likh jata hai
+//             System.out.println("jagnarayan singh ");
+//         }
+//         System.out.println("my programe ended ");
+//     }
+
+    
+// }// output of case no: 2
+
+/*ram prakash >>>>>>> statement 1
+you can not devide any no. by zero >>>>>>> statement 4
+jagnarayan singh >>>>>>> statement 5
+my programe ended >>>>>>> statement 6*/
+
+
+/******************************************************************************************************** */
+
+                              // CASE :3 //
+
+// public class B {
+//     public static void main(String[] args) {
+//         try {
+//             System.out.println("ram prakash");
+//             int a=10,b=0,c;
+//             c=a/b;
+//             System.out.println(c);
+//             System.out.println("shiv shakti");
+//         } catch ( NullPointerException e) {
+//             System.out.println(" you can not devide any no. by zero");>>>>>>>>>>>>>>>>type 1
+            
+//         }
+     /*catch(ArithmeticException r){
+                    int x=10,y=0,z;
+                    z=x/y;               >>>>>>>>>>>>>>>>> type 2( exception in cath block)
+                    System.out.println(z);
+
+                } */
+//         finally{// security code likh jata hai
+//             System.out.println("jagnarayan singh ");
+//         }
+//         System.out.println("my programe ended ");
+//     }
+
+    
+// }// output of case no: 3
+
+/*ram prakash >>>>>>> statement 1
+jagnarayan singh  >>>>>>> statement 5
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+        at B.main(B.java:35) */
+
+        /*################################################################################# */
+
+                            // CASE :4 //
+
+        public class B {
+            public static void main(String[] args) {
+                try {
+                    System.out.println("ram prakash");
+                    int a=10,b=0,c;
+                    c=a/b;
+                    System.out.println(c);
+                    System.out.println("shiv shakti");
+                 } 
+                catch(ArithmeticException r){
+                    int x=10,y=0,z;
+                    z=x/y;
+                    System.out.println(z);
+
+                }
+                finally{// security code likh jata hai
+                    int p=10,q=0,z;
+                    z=p/q;
+                    System.out.println(z);
+
+                    System.out.println("jagnarayan singh ");
+                }
+                System.out.println("my programe ended ");
+            }
+        
+            
+        }// output of case no : 4
+        /*ram prakash >>>>>>>> statement 1
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+        at B.main(B.java:112) */

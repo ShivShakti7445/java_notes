@@ -1,0 +1,18 @@
+//               // CHECKED EXCEPTION 
+// import java.io.FileReader;
+
+// class flipkart{
+//     public static void main(String[] args) {
+//         FileReader f=new FileReader("demo.text"); // EXCEPTION CHECKED BY COMPILER (WHICH INDICATE BY RED LINE)
+//         System.out.print(f.read());
+//     }
+// }
+
+// //                   UNCHECKED EXCEPTION
+
+// class B{
+//     public static void main(String[] args) {
+//         System.out.print(10/0);  // EXCEPTION IGNORE BY COMPILER
+//     }
+// }
+

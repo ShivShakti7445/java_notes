@@ -1,0 +1,43 @@
+//  CONSTRUCTOR OVERLOADING ( when ever we have more than one constructor in a same class having differen parameter or different no. of parameter than it is called as constructor overloading)
+
+class A{
+  
+  int a;String b;double c;
+   A(){
+    a=23;b="ram";c=23.45;
+    System.out.println(a+" "+b+" "+c);}
+
+  
+   A(int x){
+    
+        a=x;
+        System.out.println(a);
+      }
+    
+   
+
+  
+  A(int x,String y){
+    a=x;b=y;
+    //System.out.println(a+" "+b);              //method 1 value print karwane ka ussi method me
+  }
+  A(int x,String y,double z){
+    a=x;b=y;c=z;}
+    //System.out.println(a+" "+b+" "+c);}
+   
+  }
+  class B{
+    public static void main(String[] args) {
+      A r=new A();
+      A r1=new A(10);
+      A r2=new A(34, "ram");
+      A r3=new A(234,"RAJ",123.45);
+      System.out.println(r1.a);
+      System.out.println(r2.a+" "+r2.b);                // Method 2 print karwane ka dusre CLASS me
+      System.out.println(r3.a+" "+r3.b+" "+r3.c);
+  
+      
+    } 
+
+  }
+

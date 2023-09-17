@@ -1,0 +1,63 @@
+               //         NESTED TRY BLOCK              //
+// class B {
+//     public static void main(String[] args) {
+        
+    
+//     try{
+//         //statement :1 >>>> agar halka fulka risk / exception ho t0 yaha par likhenge 
+//         try{
+//             // statement :2; >>>>>>>>  agar bahut saara  risk / exception ho t0 yaha par likhenge 
+//             // statement :3;
+
+//         }
+//         catch( Exception e){
+//             // statement :4;
+//         }
+//     }
+   
+    
+//  catch( Exception d){
+//         // statement :5;
+//     }
+//    // statement :6;
+// }}
+
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+
+class B {
+    public static void main(String[] args) {
+        
+    
+    try{
+        String a=null;
+
+
+       System.out.println(a.toUpperCase()); //>>>> statement :1
+        try{
+
+            System.out.println(10/2);  //>>>> statement :2
+            System.out.println(10/0);//>>>> statement :3
+
+        }
+        catch(  Exception e){
+            System.out.println(" you can't devede by any no. by zero");  //>>>> statement :4
+        }
+    }
+   
+    
+ catch( Exception d){
+    System.out.println("you can't convert to UpperCase() "); //>>>> statement :5
+        }
+        System.out.println("Jay shree Ram");  //>>>> statement :6
+}}
+
+/*  >>>>>> output when there is exception in statement no:3
+
+RAM PRAKASH
+5
+ you can't devede by any no. by zero
+Jay shree Ram */
+
+/* >>>>>> output when there is exception in statement no:1
+you can't convert to UpperCase() 
+Jay shree Ram */

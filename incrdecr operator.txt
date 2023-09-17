@@ -1,0 +1,25 @@
+//incr/decr operator
+import java.util.Scanner;
+public class incrdecroperator{
+    public static void main ( String args[]){
+        int a;
+        System.out.print("enter the integer");
+        Scanner sc=new Scanner(System.in);
+        a=sc.nextInt();
+
+         
+         System.out.println(a);
+         System.out.println(++a);//pre increament 
+         System.out.println(a++);//post increament
+         System.out.println(--a);//pre increament
+         System.out.println(a--);//post increament
+       
+       
+        
+        
+       
+      
+    }
+
+    
+}

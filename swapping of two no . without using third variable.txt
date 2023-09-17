@@ -1,0 +1,24 @@
+// swapping of two no . without using third variable
+import java.util.Scanner;
+
+class triangle{// file name kuchh bhi ho sakta hai 
+    public static void main(String[] args){
+        int a,b;
+       
+        System.out.print("enter any two no. : ");
+        Scanner sc =new Scanner(System.in);
+      a=sc.nextInt();
+      b=sc.nextInt();
+        
+        System.out.print("before swapping of two no. : ");
+
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        System.out.print("after swapping of two no. : ");
+        
+        System.out.print(a+" ");
+        System.out.print(b);
+
+    }
+}

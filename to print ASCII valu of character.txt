@@ -1,0 +1,21 @@
+
+
+// to print ASCII valu of character(American Standard Code for Information Interchange)
+import java.util.Scanner;
+ class ASCII{//class name kuchh bhi le sakte hai
+    public static  void main(String[] args){
+        Character ch;
+        System.out.print("enter any character :");
+        Scanner sc=new Scanner(System.in) ;
+        ch=sc.next().charAt(0); 
+        int a=ch;
+        System.out.print(a);
+        
+       }
+      }
+       
+
+
+    
+    
+

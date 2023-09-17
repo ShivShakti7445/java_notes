@@ -1,0 +1,27 @@
+                     /* ENCAPSULATION */
+
+class B{
+    private int value;   //data hidding (variable is private)
+    public void setvalue( int x) {
+       
+        value= x;
+                         /* both class are public */
+    }
+    public int getvalue() {
+        return value ;
+        
+    }
+}
+class A
+{public static void main(String[] args) {
+    B r=new B();
+    r.setvalue(100);
+    System.out.print(r.getvalue());
+    
+}
+
+}
+
+/*  output:
+    100
+ */

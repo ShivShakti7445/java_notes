@@ -1,0 +1,53 @@
+                 //DEFAULT CONSTRUCTOR  ( type of constructor)    
+//case :1
+    class d{
+  int a;String b;boolean c;
+  d()//default constructor
+  {
+    a=23;b=" raju"; c= true;
+
+  }
+  void print(){
+    System.out.println(" value of a : "+a);
+    System.out.println(" value of b : "+b);
+    System.out.println(" value of c : "+c);
+  }
+}
+    // case:2
+class e{
+  int a;String b;boolean c;
+  /*d()//default constructor{ jab ham default constructor ko by mistke na le to compiler automatic le leta hai sabhi instanse variable ka default value  }
+  {
+    a=23;b=" raju"; c= true;
+
+  }*/
+  void ram(){
+    System.out.println(" value of a : "+a);
+    System.out.println(" value of b : "+b);
+    System.out.println(" value of c : "+c);
+  }
+}
+
+ class A{
+  public static void main (String[] args) {
+    d ref=new d();
+    ref.print();
+    System.out.print("\n");
+    e r=new e();
+    r.ram();
+    
+  }
+}
+        // case :1
+/*
+ value of a : 23
+ value of b :  raju
+ value of c : true
+ */
+
+ //              case :2
+ /*
+   value of a : 0
+ value of b : null
+ value of c : false
+  */

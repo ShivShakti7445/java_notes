@@ -1,0 +1,36 @@
+//WHILE LOOP statement
+
+import java.util .Scanner;
+class whileloop{
+    public static void main(String [] args){
+        int i;
+        System.out.print("enter the value of i :");
+        Scanner sc =new Scanner(System.in);
+        i=sc.nextInt();
+        while(i<=10){
+            System.out.println("I LOVE YOU MY ELDER BROTHER  :");
+
+
+        }
+        
+        System.out.println("I LOVE YOU MY ELDER  SISTER:");
+       
+        }
+       
+
+    
+    
+    }
+       
+   
+
+
+
+ 
+
+
+
+    
+
+
+

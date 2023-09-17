@@ -1,0 +1,115 @@
+//pre define static arrays
+
+// java programme to arrange the element of array in decending order by using "sort()" method
+      //  import java.util.Scanner;
+      //  import java.util.Arrays;
+      //   class ASCII{//class name kuchh bhi le sakte hai
+      //      public static  void main(String[] args){
+      //       int cout,i;
+      //        int a[]= new int[5];
+      //        System.out.print("enter the element of a[] array......");
+      //        Scanner sc=new Scanner(System.in);
+      //        for( i=0;i<5;i++)
+      //        //for(i=0;i<a.length:i++)
+      //        {
+      //        a[i]=sc.nextInt();
+      //        }
+             
+      //    Arrays.sort(a);
+      //        for(i=0;i<5;i++ ){
+               
+      //          System.out.print(a[i]+" ");
+      //          }
+      //        }
+             
+            
+            
+      //       }
+          
+      // code to check given arrays is equals or not by using "equals()" method
+
+      // import java.util.Scanner;
+      // import java.util.Arrays;
+      //  class ASCII{//class name kuchh bhi le sakte hai
+      //     public static  void main(String[] args){
+      //      int i;
+      //       int a[]= new int[5];
+      //       System.out.print("enter the element of a[] array......");
+      //       Scanner sc=new Scanner(System.in);
+      //       for( i=0;i<5;i++)
+      //       //for(i=0;i<a.length:i++)
+      //       {
+      //       a[i]=sc.nextInt();
+      //       }
+      //       int b[]= new int[5];
+      //       System.out.print("enter the element of b[] array......");
+      //       for( i=0;i<5;i++)
+      //       //for(i=0;i<a.length:i++)
+      //       {
+      //       b[i]=sc.nextInt();
+      //       }
+            
+      //  boolean c =Arrays.equals(a,b);
+      //  System.out.print("kya dono arrays same hai12 23 34 45 5 :  "+c);
+ 
+
+           
+           
+           
+      //      }
+      //    }
+                   // METHOD 2
+             
+                   //import java.util.Scanner;
+                  //  import java.util.Arrays;
+                  //  class ASCII{//class name kuchh bhi le sakte hai
+                  //       public static  void main(String[] args){
+                  //          int i;
+                  //           int a[]= new int[5];
+                  //           int b[]= new int[6];
+                  //           boolean c =Arrays.equals(a,b);
+                  //           System.out.print("kya dono arrays same hai :  "+c);
+ 
+                  //       }}
+             
+            
+             // code for copy one arrays to other arrays
+             
+             import java.util.Scanner;
+             import java.util.Arrays;
+               class ASCII{//class name kuchh bhi le sakte hai
+                public static  void main(String[] args){
+                   int i;
+                    int a[]= new int[5];
+                    System.out.print("enter the element of a[] array......");
+                   Scanner sc=new Scanner(System.in);
+                    for( i=0;i<5;i++)
+                //for(i=0;i<a.length:i++)
+                    {
+                    a[i]=sc.nextInt();
+                    }
+                   //int b[]=Arrays.copyOf(a,5);
+                   int b[]=Arrays.copyOf(a,6);///agar ham b[] me kuchh extra element daalna chahate hai tab iss concept ka use karenge
+                   b[5]=100;
+                    System.out.print("element of b[] array......");
+                    for( i=0;i<=5;i++)
+                    //for(i=0;i<a.length:i++)
+                    {
+                     System.out.print(b[i]+" ");
+                  
+                    }
+                   
+    
+                  }}
+
+
+
+             
+
+            
+             
+           
+               
+    
+    
+

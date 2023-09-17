@@ -1,0 +1,29 @@
+                 /*      INTERFACE INTRODUCTION */
+import java.util.Scanner;
+ interface client  {
+     void input();//public+abstracts
+   void output();
+}
+class shiva implements client{
+    String name;double sal;
+ public void input(){
+    Scanner s=new Scanner(System.in);
+    System.out.print("enter your name : ");
+    name=s.nextLine();
+    System.out.print("enter you monthly salery : ");
+    sal=s.nextDouble();
+ 
+ }
+ public void output(){
+    System.out.println(name );
+    System.out.println(sal );
+ }
+}
+class B{
+    public static void main(String[] args) {
+        client c=new shiva(); 
+            c.input();
+            c.output();
+    
+    }
+}

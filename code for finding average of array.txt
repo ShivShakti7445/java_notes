@@ -1,0 +1,45 @@
+// code for finding average of array     
+import java.util.Scanner;
+        class ASCII{//class name kuchh bhi le sakte hai
+           public static  void main(String[] args){
+            double cout = 0,avg;
+             int a[]= new int[5];
+             System.out.print("enter the element of a[] array......");
+             Scanner sc=new Scanner(System.in);
+             for(int i=0;i<5;i++){
+             a[i]=sc.nextInt();
+             }
+             System.out.print(" element of the array are : ");
+             for( int i=0;i<5;i++){
+              System.out.print(a[i]+" ");
+              cout=cout+a[i];
+            
+            
+           
+             
+            
+             }
+             System.out.print("\n");
+             avg=cout/5;
+             System.out.print("avg. of the arrey is: " +avg ); 
+             
+            
+            
+           
+             
+            
+             }
+             
+
+
+
+
+             }
+
+            
+             
+           
+               
+    
+    
+

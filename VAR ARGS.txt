@@ -1,0 +1,22 @@
+
+//               var args
+class C {
+    void add (int ...a){// var args >> method
+       int sum=0;
+       for(int x:a){
+        sum=sum+x;
+        //System.out.print("sum is"+sum);
+       }
+       System.out.println("sum is : "+sum);}
+
+    }
+    class B {
+    public static void main(String[] args) {
+    C R =new C ();
+    R.add();R.add(23);R.add(12,23,45);
+    }
+    
+}
+/*sum is : 0
+sum is : 23
+sum is : 80 */

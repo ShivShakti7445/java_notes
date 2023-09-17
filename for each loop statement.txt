@@ -1,0 +1,48 @@
+//for each loop statement
+
+
+class Foreachloop{
+    public static void main(String [] args){
+        int i[]={10,20,30,40,50,60};
+        for(int b:i){
+            System.out.println(b);
+        }
+      
+
+        }
+        
+      
+       
+        }
+       
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+//using for loop
+    
+    
+class Forloop{
+    public static void main(String [] args){
+        int a[]={10,20,30,40,50,60};
+        for(int i =0;i<6;i++){
+            System.out.println(a[i]);
+        }
+      
+
+        }
+        
+      
+       
+        }
+    
+       
+   
+
+
+ 
+
+
+
+    
+
+
+

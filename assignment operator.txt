@@ -1,0 +1,26 @@
+//assignment operator
+
+import java.util.Scanner;
+public class assignmentoperator{
+    public static void main ( String args[]){
+        int a;
+        System.out.print("enter the integer");
+        Scanner sc=new Scanner(System.in);
+        a=sc.nextInt();
+
+         
+         System.out.println(a);// simple assignement ........... tab use karate hai jab kisi ki value ki assigne karna hota hai tab .
+         a+=10;
+         System.out.println(a);//a= a+10...... compound assingnment ka use tab karate hai jab kisi ke value me large value(no.) se increse or decrese karana ho 
+         a-=10;
+         System.out.println(a);//a = a-10
+       
+       
+        
+        
+       
+      
+    }
+
+    
+}

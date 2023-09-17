@@ -1,0 +1,39 @@
+            // COPY CONSTRUCTOR(type of constructor)
+  class d{
+  int x;String y;// defining of variable
+  d()  //
+  {
+   x=445;y="ram";
+   
+  }
+
+  void print(){
+    System.out.println(" value of x : "+x);
+    System.out.println(" value of  y: "+y);
+   
+  }
+
+  /******************************************************************************************************************************** */
+
+  d(d ref)       // copy constructor karne ka method 
+                 //(d ref ) bata raha hai ki d class ko copy kar raha hai
+  {
+   x=ref.x;  // yah bata raha hai ki, (x)ki jo value copy kiye hai (d class) se wah phir se x me store ho gaya hai (d(d ref )) me
+   y=ref.y;
+   System.out.print(x+" "+y);
+  }
+  
+  /******************************************************************************************************************** */
+}
+ class A{
+  public static void main (String[] args) {
+    d r1=new d();
+    r1.print();
+    System.out.print("\n");
+    d r2=new d(r1);// yah method hai copy constructor ko copy karne ka
+
+   
+   
+    
+  }
+}

@@ -1,0 +1,22 @@
+//                         NullPointerException
+
+class B{
+    public static void main(String[] args) {
+        //String str= null;// null ek define keyword hai jisko ham double inverted comma me nahi likhte hai and isko ham casted {to upper and lower case me nahi kar sakte hai }
+       String str="ram prakash";
+        try{ 
+        System.out.print(str.toUpperCase());//  yaha par exception show ho raha  to hamko iss ko "try block " me likhenge
+                                            // agar "try block" me koi bhi exception nahi hai to "try block" wala execute ho jayega vise versa
+    }
+    catch(NullPointerException e){// yaha par "NullPointerException" kewal w kewal null keyword ke wajah se jo exception ho raha sirf usko solve karne ke liye use karte hai agar by mistake ham dusare ke liye  use kar rahe hai tab  bhi koi hame error nahi milega
+        System.out.print(" your exception problems is solved :"+str);
+    }
+}}
+
+// output when we not use try - catch block
+/*Exception in thread "main" java.lang.NullPointerException: Cannot invoke "String.toUpperCase()" because "<local1>" is null
+        at B.main(B.java:4) */
+
+        //output when we use try - catch block
+        /*your exception problems is solved :null */
+        // RAM PRAKASH  >>>>>>>>>> agar by mistake ham dusare ke liye  use kar rahe hai tab  bhi koi hame error nahi milega

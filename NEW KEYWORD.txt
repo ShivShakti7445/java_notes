@@ -1,0 +1,53 @@
+                                            // NEW KEYWORD  
+                                    /* CALLINIG OF INSTANCE VARIABLE BY NEW KEYWORD  */
+// class B{
+//     int a=12;
+    
+    
+//     public static void main(String[] args) {
+        
+//         B r=new B();
+//         System.out.print(r.a);
+            // System.out.print(a);  >>>>>>>>>>> wrong method to call instance variable
+//     }
+// }
+
+//output : 12
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+                        /* CALLINIG OF CONSTRUCTOR BY NEW KEYWORD  */
+
+// class B{
+//     int a=12;
+//     B(){
+//         System.out.print(a);
+//     }
+//     public static void main(String[] args) {
+//         B r=new B();
+      
+// }}
+// output : 12
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+                   /* CALLINIG OF ARRAY BY NEW KEYWORD  */
+import java.util.Scanner;
+class B{
+    public static void main(String[] args) {
+        
+    
+    int size;
+    
+    System.out.println(" enter size of earray: ");
+    Scanner s=new Scanner(System.in);
+    size=s.nextInt();
+    int A[] =new int[size];  /* here new keyword is use to create array's keyword */
+    System.out.println(" enter element of earray: ");
+
+    for(int i =0;i<size;i++){
+        A[i]=s.nextInt();
+    }
+    System.out.println("  element of earray: ");
+    for(int m:A){
+        System.out.print(m+" ");
+    }
+}}

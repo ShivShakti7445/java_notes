@@ -1,0 +1,18 @@
+// ternary  operator
+
+public class ternaryoperator{
+    public static void main ( String args[]){
+        int a=456,b=47,max;
+        max=(a>b)?a:b;
+
+        System.out.print(max);
+       
+       
+        
+        
+       
+      
+    }
+
+    
+}

@@ -1,0 +1,66 @@
+          // MULTILAYER INHERITANCE
+class A{
+  int a,b;
+  //String name;
+  void input(){
+ System.out.println("enter the value of a and b");};
+}
+class C extends A{
+    void add(){
+      int c;
+    a =23;
+    b=234;
+    c=a+b;
+    System.out.println("ADD = "+c);
+    //name="shiv";
+    }}
+class D extends C{
+      void sub(){
+        a=34;
+        b=12;
+       int c= a-b;
+
+
+        System.out.println("sub = "+c);
+      }
+    }
+    class E extends D{
+      void mul(){
+        a=12;b=5;int c=a*b;
+        System.out.println("mul = "+c);
+      }
+
+      }
+class F extends E{
+  void div(){
+    a=24;b=6;
+    int c=a/b;
+   
+    System.out.println("div ="+c);
+  }
+
+}
+    
+class B extends F{
+    public static void main(String[] args) {
+      
+      
+      B r1=new B();
+      r1.add();
+       r1.sub();
+       r1.mul();
+       r1.div();
+      
+      
+    
+      
+    }
+    }
+
+  
+  /*
+ADD = 257
+sub = 22
+mul = 60
+div =4
+   */

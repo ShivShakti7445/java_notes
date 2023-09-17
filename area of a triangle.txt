@@ -1,0 +1,19 @@
+import java.util.Scanner;
+//import java.lang.Math..................>> me hi sqrt chupaa hai
+class triangle{
+    public static void main(String[] args){
+        //int a,b,c,s;
+        int a;
+        double area;
+        System.out.print("enter the  side of a tringle : ");
+        Scanner sc =new Scanner(System.in);
+        a=sc.nextInt();
+       // b=sc.nextInt();
+       // c=sc.nextInt();
+        //s=(a+b+c)/2;
+        //area=Math.sqrt(s*(s-a)*(s-b)*(s-c));//square jo define hai wah Math ke Class me hai
+        area=Math.sqrt(3)/4*(a*a)
+        System.out.print("area of a triangle is : "+area);
+
+    }
+}

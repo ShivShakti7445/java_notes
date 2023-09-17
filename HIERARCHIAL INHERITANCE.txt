@@ -1,0 +1,37 @@
+
+                    //  HIERARCHIAL INHERITANCE
+                    class A{
+                      void input(){
+                        int a,b;
+                        System.out.println("enter your integet value of a and b");
+                      }
+                    
+                     }
+                    class D extends A{
+                      void m1(){
+                        int a=23;int b=234;int c;
+                        c=a+b;
+                        System.out.println(c);
+                      }
+                    
+                    }
+                    class C extends A{
+                      void m2(){
+                        int a=53;int b=23;int c;
+                        c=a*b;
+                        System.out.println(c);
+                      }
+                      }
+                    
+                    class B {
+                      public static void main(String[] args) {
+                        //B r =new B();
+                        A r1 =new A();
+                        r1.input();
+                        C r2=new C();
+                        r2.m2();
+                        D r3 =new D();
+                        r3.m1();
+                      }
+                    }
+                    

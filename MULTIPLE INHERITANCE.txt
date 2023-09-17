@@ -1,0 +1,54 @@
+
+//                      /*             MULTIPLE INHERITANCE                */ 
+//                      /* code  for java when both interface A and C have same implementation  */
+//  interface A{
+//  void show();
+    
+// }
+// interface C{
+//     void show();
+       
+//    }
+// class B implements A,C{
+//     public void show(){
+//         System.out.print(" this is A and B ");}
+//         public static void main(String[] args) {
+//              B r =new B();
+//              r.show();
+//         }
+//     }
+   
+//    /* output:
+//     * this is A and B 
+//     */
+
+
+                    /* code  for java when both interface A and C have  different implementation   */
+                    interface A{
+                        void show();
+                           
+                       }
+                       interface C{
+                           void disp();
+                              
+                          }
+                       class B implements A,C{
+                           public void show(){
+                               System.out.println(" this is A  ");}
+                               public void disp(){//  agar disp() method ko class B me call n kare to error show hoga
+                                System.out.print(" this is  B ");}
+                               public static void main(String[] args) {
+                                    B r =new B();
+                                    r.show(); // >>>>>>>>>>>>>>>>>>> case :1
+                                    //r.disp(); >>>>>>>>>>>>>>>> case 2
+                               }
+                           }
+                          
+
+                           /*
+                            output:
+                            case :1  >>> this is A  
+                                         this is  B
+                            case :2  >>> this is A  
+                               
+                            */

@@ -1,0 +1,22 @@
+                    // STATIC BLOCK
+class B{
+  {
+    System.out.println("Gagnarayan");
+
+  }
+  B(){
+    System.out.println("Shiva");
+  }
+  static{
+    System.out.println("Rajkumari"); // sabse pahale static block call kiya jata hai than instance block and than constructor
+  }
+  public static void main(String[] args) {
+    B r=new B();//object define kiya gaya hai instance block and default constructor ko call karne ke liye 
+  }
+}
+
+/*
+Rajkumari
+Gagnarayan
+Shiva
+ */

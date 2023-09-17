@@ -1,0 +1,25 @@
+// sum of digit  of an integer
+
+import java.util.Scanner;
+class b{//class name kuchh bhi le sakte hai
+   public static  void main(String[] args){
+     
+     int n,ref=0,r,sum;
+     System.out.print("enter any integer : ");
+     Scanner sc=new Scanner(System.in);
+     
+     n=sc.nextInt();
+     while (n>0) {
+      r=n%10;   //123%10=3(% yah kewal remainder deta hai)
+      ref=ref+r;
+      n=n/10;
+      //System.out.print("sum of digit of an integer is : "+ref);
+      
+     }
+    System.out.print("sum of digit of an integer is : "+ref);
+
+     }
+     
+     }
+    
+  

@@ -1,0 +1,23 @@
+// convert lower to upper charater and vice - versa
+import java.util.Scanner;
+
+class triangle{// file name kuchh bhi ho sakta hai 
+    public static void main(String[] args){
+        char ch,ch1,ch2;
+       
+        System.out.print(" enter any character : ");
+        Scanner sc =new Scanner(System.in);
+      ch=sc.next().charAt(0);
+      if(ch>='A' && ch<='Z'){
+        ch1=Character.toLowerCase(ch);// yaha par  toLowerCase java ke peackage me already diya hai jis ko call kar lenge Character se
+        System.out.print(ch1);
+      }
+      else{
+        ch2=Character.toUpperCase(ch);// yaha par  toLowerCase java ke peackage me already diya hai jis ko call kar lenge Character se
+        System.out.print(ch2);
+      }
+
+     
+
+    }
+}

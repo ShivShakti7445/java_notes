@@ -1,0 +1,74 @@
+
+
+                             //    ABSTRACT CLASS
+                          /*    note >>>>> point no.1 */
+// abstract class am{
+
+// }
+// class C extends am{
+  
+// }
+// class B{
+//   public static void main(String[] args) {
+//     am r=new am(); 
+//   }
+// }
+/* out put:
+                B.java:9: error: am is abstract; cannot be instantiated
+ */
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+// abstract class am{
+
+// }
+// class C extends am{
+  
+// }
+// class B{
+//   public static void main(String[] args) {
+//     am r=new C(); //koi bhi super class apne sub class ke refernce ko le sakta ha
+//   }
+// }
+
+
+
+
+/******************************************************************************************************************************** */
+abstract class animal{
+  animal(){
+    System.out.print(" name of animals is : ");
+  }
+  
+      public abstract void sound();
+}
+class dog extends animal{
+  dog(){
+    super();
+  }
+  public void sound(){
+    System.out.print(" dog >>>>>>>> ");
+System.out.println("dog is barking ");
+
+  }};
+  class lion extends animal{
+    lion(){
+      super();
+    }
+    public void sound(){
+      System.out.print(" lion >>>>>>>> ");
+  System.out.print("lion  is roaring ");
+  
+    };
+}
+class B{
+  public static void main(String[] args) {
+   dog d=new dog();
+   d.sound();
+   lion l=new lion();
+   l.sound();
+} }
+/* output:
+ name of animals is :  dog >>>>>>>> dog is barking 
+ name of animals is :  lion >>>>>>>> lion  is roaring
+  */

@@ -1,0 +1,29 @@
+ //   implict datatype
+public class A {
+
+     public static void main (String [] args){
+        int a= 5; //4 byte
+        double b=a; //8 byte
+         System.out.print(b);
+     }
+    
+ }
+
+//#########################################
+
+//explicite datatype
+
+public class A {
+    
+
+    public static void main (String args[]){
+
+               double b= 35.67;
+               int a = (int)b;
+               System.out.print(a);
+
+    }
+
+
+
+}

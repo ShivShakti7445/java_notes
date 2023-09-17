@@ -1,0 +1,21 @@
+//  by using for each loop to print the value of array 
+import java.util.Scanner;
+class array{
+  public static void main(String[]args){
+  
+
+    int a[]=new int[4];
+    a[0]=3;
+    a[1]=32;
+    a[2]=34;
+    a[3]=35;
+    
+
+    for(int b:a){//syntex of for each loop
+      System.out.print(b+" ");
+      
+
+    }
+    
+  }
+}

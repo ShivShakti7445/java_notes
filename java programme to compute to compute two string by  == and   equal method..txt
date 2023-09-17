@@ -1,0 +1,39 @@
+// java programme to compute to compute two string by " == " and  " equal" method.
+public class A {
+ public static void main  (String[]args){
+                         //   bY " == " METHOD { "==">>>>>>> kewal object ko dekhata hai agar dono object same hai to true otherwise false}
+  String a="sikha";
+  String b="sikha";
+  if(a==b){
+  System.out.println("true");
+
+  }
+  else{
+    System.out.println("false");
+  }
+
+  String c="sikha";
+  String d="Sikha";
+  if(c==d){
+  System.out.println("true");
+
+  }
+  else{
+    System.out.println("false");
+  }
+
+//                BY "equals()" method  {" equals">>> yah parameter/content ko dekhata hai agar dono same hai to true nahi to  false}
+
+
+
+  String e=new String("avanish");
+  String f="avanish";
+  if(e.equals(f)){
+    System.out.println("true");
+
+  }
+else{
+  System.out.println("false");
+}
+  
+ }}

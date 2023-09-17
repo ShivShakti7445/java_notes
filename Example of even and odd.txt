@@ -1,0 +1,25 @@
+// Example of even and odd
+import java.util.Scanner;
+class evenodd{
+    public static void main( String [] args){
+       int a;
+        System.out.println("enter any integer :");
+        Scanner sc=new Scanner(System.in);
+        a=sc.nextInt();
+        if(a%2==0){
+            System.out.println("given integer is even :");
+
+        }
+        else{
+            System.out.println("given integer is odd:");
+
+        }
+
+
+
+
+    }
+    }
+
+
+ 

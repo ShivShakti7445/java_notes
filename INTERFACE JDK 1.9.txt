@@ -1,0 +1,37 @@
+             /*                  INTERFACE JDK 1.9                           */
+interface A{
+  // default void call (){  //>>>>>>>>>>>>> way <1> TO call   private method of interface 
+  //   add(12,23);
+  // }
+  //  private void add( int x,int y){
+  //   System.out.println("sum of two no.is : "+(x+y));
+  //  };
+  public static void call (){  //>>>>>>>>>>>>> way <2> TO call   private method of interface 
+    add(12,23);
+  }
+   private static void add( int x,int y){
+    System.out.println("sum of two no.is : "+(x+y));
+   };
+  
+}
+class C implements A{
+  public void sub( int x,int y){
+   System.out.println("diff. of two no.is : "+(x-y));
+  };
+ 
+}
+ class flipkart{
+  public static void main(String[] args) {
+    C r=new C();
+    r.sub(200,100);
+    A.call(); // INTERFACE KE NAME SE CALL HOTA HAI   private method of interface  JAB HAM STATIC METHOD USE KARTE HAI 
+    //  r.add(12,23);  >>>>>>>>>> wrong way to call  private method of interface
+    // there are two method to call private method of interface  1> by default method  2>
+  }
+ }
+
+/*flipkart.java:18: error: cannot find symbol
+    r.add(12,23);
+     ^
+  symbol:   method add(int,int)
+  location: variable r of type C */

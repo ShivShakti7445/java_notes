@@ -1,0 +1,41 @@
+// code for finding perfect no ( a positive integer that is equal to the sum of its proper divisors)
+import java.util.Scanner;
+
+class b{//class name kuchh bhi le sakte hai
+   public static  void main(String[] args){
+     
+     int n,p=0;
+     
+    System.out.print("enter any number.....");
+    Scanner sc=new Scanner(System.in);
+    n=sc.nextInt();
+    
+      for(int i=1;i<n;i++){
+        if(n%i==0){
+        System.out.print(i+ " ");
+        
+       p=p+i;
+      }
+     }
+     System.out.println();
+   if(p==n){
+       System.out.print(" given number is a perfect no. : ");
+   }
+   else{
+    System.out.print(" given number is not perfect no. : ");
+   }
+  }
+}
+  
+
+    
+    
+  
+    
+  
+
+
+     
+     
+    
+  

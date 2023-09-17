@@ -1,0 +1,18 @@
+// ternary  operator (to find the greatest of the no.)
+
+public class ternaryoperator11{
+    public static void main ( String args[]){
+        int a=456,b=47,c=465,max;
+        max=(a>b)?(a>c?a:c):(b>c?b:c);
+
+        System.out.print(max);
+       
+       
+        
+        
+       
+      
+    }
+
+    
+}

@@ -1,0 +1,32 @@
+// palindrome no.(yah aisa  no. jisko reverse karne par same no. hi aata hai  121....>121)
+import java.util.Scanner;
+class b{//class name kuchh bhi le sakte hai
+   public static  void main(String[] args){
+     
+     int n,r,p=0;
+    System.out.print("enter any number.....");
+    Scanner sc=new Scanner(System.in);
+    n=sc.nextInt();
+  
+    System.out.print(n);
+    while (n>0) {
+      r=n%10;
+      p=p*10+r;//yah syntex hai  palindrome no.ka
+      n=n/10;
+
+      
+    }
+    if (n==p) {
+      System.out.print(" is palindrome no....! ");
+      
+    }
+    else{
+      System.out.print("  is not palindrome no....! ");
+    }
+  }
+
+}
+     
+     
+    
+  

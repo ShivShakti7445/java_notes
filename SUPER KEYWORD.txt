@@ -1,0 +1,122 @@
+                //    SUPER KEYWORD
+                // By using super keyword , calling of  variable
+// class A{
+//   int a=23;
+// }
+// class C extends A{
+//   int a=45;
+//   void M1(){
+   
+//     System.out.println(a);
+//     System.out.println(super.a);     // WAY OF CALLING VARIBLE OF SUPER CLASS
+//   }
+// }
+//  class B{
+//   public static void main(String[] args) {
+//     C r=new C(); 
+//     r.M1();
+
+
+
+    
+//   }
+//  }
+ /*********************************************************************************************************************** */
+
+              /* By using super keyword calling of method of super class */
+//  class A{
+//   void M1(){
+//     System.out.println("RAM PRAKASH");
+//   }
+// }
+// class C extends A{
+ 
+//   void M1(){
+   
+//     System.out.println(" SHIV SHAKTI");
+//     super.M1();  //            WAY OF CALLING OF METHOD OF SUPER CLASS
+//   }
+// }
+//  class B{
+//   public static void main(String[] args) {
+//     C r=new C(); 
+//      r.M1();
+
+
+
+    
+//   }
+//  }
+
+
+/********************************************************************************************************************** */
+                 /* By using super keyword calling of constructor of super class */
+class A{
+  A(){
+    System.out.println("RAM ");
+  }
+}
+class C extends A{
+ 
+  C(){
+   super();// >>>>>>>>>>>>>>>>>SUPER CLASS KO ALREADY CALL KAR DIYA GAYA HAI JVM DWARA  agar aap mention nahi karenge to
+            // way of calling  of constructor of  super class 
+    System.out.println("RAJU ");
+    
+  }
+}
+ class B{
+  public static void main(String[] args) {
+    C r=new C(); 
+    
+
+
+
+    
+  }
+ }
+/***************************************************************/
+                      // example 2  //
+ /*By using super keyword calling of parametrized constructor of super class */
+
+
+class A{
+  A(int a){
+    System.out.println(a);
+  }
+}
+class C extends A{
+ 
+  C(){
+   super(100);// >>>>>>>>>>>>>>>>>SUPER CLASS KO ALREADY CALL KAR DIYA GAYA HAI JVM DWARA  agar aap mention nahi karenge to
+            // way of calling  of constructor of  super class 
+    System.out.println("RAJU ");
+    
+  }
+}
+ class B{
+  public static void main(String[] args) {
+    C r=new C(); 
+    
+
+
+
+    
+  }
+ }
+
+/*
+   output : 1
+      45 
+      23
+   outpt : 2
+      SHIV SHAKTI
+      RAM PRAKASH
+   output :3
+        RAM 
+        RAJU
+   output :4
+           100
+           RAJU 
+
+ */

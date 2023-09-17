@@ -1,0 +1,21 @@
+//  TRIBONACCI SERIES >>>>>>> yah ek aisa series hai jo 0,1 and 2 se start hota hai aur aage badhata jata rahta by adding the previous three no.  for. example{ 0 1 2 3 6 11 .....}
+
+import java.util.Scanner;
+class A{
+    public static void main( String [] args){
+        int i,term,a=0,b=1,c=2,d;
+        System.out.print(" enter the term : ");
+        Scanner sc=new Scanner(System.in);
+        term=sc.nextInt();
+    for(i=1;i<=term;i++){
+       
+        System.out.print(a+" ");
+        
+        d=a+b+c;
+        a=b;
+        b=c;
+        c=d;
+    }
+        
+         
+}}

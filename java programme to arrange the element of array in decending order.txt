@@ -1,0 +1,54 @@
+// java programme to arrange the element of array in decending order
+       import java.util.Scanner;
+        class ASCII{//class name kuchh bhi le sakte hai
+           public static  void main(String[] args){
+            int cout,i;
+             int a[]= new int[5];
+             System.out.print("enter the element of a[] array......");
+             Scanner sc=new Scanner(System.in);
+             for( i=0;i<5;i++){
+             a[i]=sc.nextInt();
+             }
+             System.out.print(" element of the array are : ");
+             System.out.print("\n");
+             for( i=0;i<5;i++){
+              
+               
+             for( int j=i+1;j<5;j++){
+               if(a[j]>a[i]){
+                  cout =a[i];
+                  a[i]=a[j];
+                  a[j]=cout;
+               }
+             }
+               }
+               for( i=0;i<5;i++){
+              System.out.print(a[i]+" ");}
+              
+            
+            
+           
+             
+            
+             }
+             
+            
+            
+           
+             
+            
+             }
+             
+
+
+
+
+             
+
+            
+             
+           
+               
+    
+    
+

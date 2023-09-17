@@ -1,0 +1,26 @@
+         // COVARIENT RETURN TYPE
+class A {
+    A Show(){
+        System.out.println(" ram");
+        return this;  // "this" keyword is used for representing of current method;
+         /* OR return new A ; */               /* yaha par return type "this " use huaa hai kyoki method creation me reeturn type class ka name use kiya gaya hai "A" */
+ /*int show(){
+    System.out.print("ram");
+    return 12/0/1:{any one} /* yaha par return type "12/0/1" use huaa hai kyoki method creation me reeturn type "int" use kiya gaya hai
+ } */}}
+ class C extends A{
+    @Override
+
+  C Show(){
+    super.Show();// this is used here to call the method of super class
+    System.out.print(" ram prakash");
+    return this;
+  }
+ 
+}
+class B {
+    public static void main(String[] args) {
+C r=new C();
+r.Show();
+    }
+}

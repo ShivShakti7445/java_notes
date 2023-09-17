@@ -1,0 +1,26 @@
+// nested for loop printing of square
+
+class Nestedforloop{
+    public static void main( String [] args){
+        int i,j;
+        for(i=1;i<=5;i++)//for row( agar yah ek baaaaar true hota hai tab(j)wala execute hoga jab tak false nahi hota hai aur jab false hoga tab new line mil jayega aur phir se for loop(i) ko cross check karega programme)
+        {
+            System.out.print("* ");
+            for(j=1;j<=5;j++)//for coloum
+            {
+                System.out.print("* ");
+
+          
+
+
+
+        }
+        System.out.println();
+
+
+
+    }
+    }
+
+
+ }

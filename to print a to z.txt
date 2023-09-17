@@ -1,0 +1,14 @@
+// to print a to z
+
+ class ASCII{//class name kuchh bhi le sakte hai
+    public static  void main(String[] args){
+        Character ch ,i;
+       
+        for(i='a';i<='z';i++){
+          System.out.print(i+" ");
+        }
+        
+       }
+      }
+       
+

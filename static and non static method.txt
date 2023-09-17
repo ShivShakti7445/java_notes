@@ -1,0 +1,26 @@
+//static and non static method 
+
+
+class A{
+    int a=10;
+    static int b=34;
+
+                                   // Static method
+    public static void  add(){
+        
+        System.out.print(b+"\n");
+    }
+                                 // non static
+     void ran(){// non static method istanse variable and static varible dono ko call  kar sakta hai        
+        System.out.print(" my name is shiv "+(a+ " "+b));
+    }
+    
+                              //  main fuction
+    public static void main( String [] args){
+        A.add();
+        A r=new A();// method for object declaration
+        r.ran();
+      
+    }
+
+}

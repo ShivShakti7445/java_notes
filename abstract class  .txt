@@ -1,0 +1,13 @@
+    /* abstract class  */
+
+abstract class am{
+
+}
+class C extends am{
+  
+}
+class B{
+  public static void main(String[] args) {
+    am r=new C(); // koi bhi super class apne sub class ke refernce ko le sakta hai 
+  }
+}

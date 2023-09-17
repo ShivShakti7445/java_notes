@@ -1,0 +1,41 @@
+// code for making calculator
+       import java.util.Scanner;
+        class ASCII{//class name kuchh bhi le sakte hai
+           public static  void main(String[] args){
+             float num1,num2;
+             char c;
+             System.out.print("enter num1 : ");
+             Scanner sc=new Scanner(System.in);
+             num1=sc.nextInt();
+             System.out.print("enter num2 : ");
+             num2=sc.nextInt();
+             System.out.print("enter your choice..... ");
+             c=sc.next().charAt(0);
+             switch(c){
+              case '+':
+              System.out.print(" your sum is : "+(num1+num2));
+              break;
+              case '-':
+              System.out.print(" your sub. is : "+(num1-num2));
+              break;
+              case '*':
+              System.out.print(" your mul. is : "+(num1*num2));
+              break;
+              case '/':
+              System.out.print(" your div. is : "+(num1/num2));
+              break;
+             }
+              
+
+
+
+
+             }
+
+            
+             }
+           
+               
+    
+    
+

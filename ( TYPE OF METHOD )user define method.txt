@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class ArraySearch {
+    int n1,n2,sum,mul,add,sub,rem,div;
+    Scanner sc=new Scanner(System.in);
+    void input(){
+        System.out.print(" enter tywo interger :");
+        n1=sc.nextInt();
+        n2=sc.nextInt();
+
+    }
+    void process(){
+        sum=n1+n2;
+        sub=n1-n2;
+        mul=n1*n2;
+        div=n1/n2;
+        rem=n1%n2;
+    }
+    void output()
+    {
+       System.out.println("sum is : "+sum) ;
+       System.out.println("sub is : "+sub) ;
+       System.out.println("mul is : "+mul) ;
+       System.out.println("div is : "+div) ;
+       System.out.println("rem is : "+rem) ;
+    }
+    public static void main(String[]args){
+        ArraySearch r = new ArraySearch();
+        r.input(); 
+        r.process();
+        r.output();
+
+    }
+
+    
+
+
+   
+    }

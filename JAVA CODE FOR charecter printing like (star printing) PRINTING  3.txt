@@ -1,0 +1,25 @@
+
+public class ASCII {
+ public static void main (String[]args){
+  char i,j , cout =65;
+  
+  for(i='A';i<='E';i++){
+    for(j='A';j<=i;j++){
+  
+      System.out.print(cout);
+      cout++ ;
+    }
+    System.out.print("\n ");
+  }
+
+  }
+}     
+   
+
+/*
+ A
+ BC
+ DEF
+ GHIJ
+ KLMNO
+ */

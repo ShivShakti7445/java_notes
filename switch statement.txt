@@ -1,0 +1,45 @@
+// switch statement
+
+import java.util .Scanner;
+class switchstatement{
+    public static void main(String [] args){
+        int a,b,ch;
+        System.out.print("enter the value of a :");
+        Scanner sc =new Scanner(System.in);
+        a=sc.nextInt();
+        System.out.print("enter the value of b :");
+       // Scanner sc =new Scanner(System.in);
+        b=sc.nextInt();
+        System.out.print("enter your choice.... :");
+        ch=sc.nextInt();
+       
+        switch(ch){
+        
+       
+            case 1:        System.out.print("add :"+(a+b));
+            break;
+            case 2:System.out.print("sub :"+(a-b));
+            break;
+            case 3:System.out.print("mul :"+(a*b));
+            break;
+            default:System.out.print("div:"+(a/b));
+
+
+        }
+       
+
+    
+    
+    }
+       
+   
+
+
+ 
+
+
+
+    }
+
+
+

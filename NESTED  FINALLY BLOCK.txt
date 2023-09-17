@@ -1,0 +1,35 @@
+                /*            NESTED  FINALLY BLOCK () */
+
+
+public class flipkart {
+
+    public static void main(String[] args) {
+        try{
+            String a="shiv shakti";
+            System.out.println(a.toUpperCase());
+        }
+        catch(Exception e){
+            System.out.println("can't converted into upper case");
+
+        }
+        finally{ // >>>>>>>>>> this block is alwys be execute once
+            System.out.println("jagnarayan singh");
+            try{
+                System.out.println(10/3);
+            }
+            catch(Exception d){
+                System.out.println("your no. can't be devided by zero");
+            }
+            finally{
+                System.out.println("i love banaras");
+            }
+        }
+        System.out.println("jai mahakaal");
+    }
+}
+/*        output:
+SHIV SHAKTI
+jagnarayan singh
+3
+i love banaras
+jai mahakaal */

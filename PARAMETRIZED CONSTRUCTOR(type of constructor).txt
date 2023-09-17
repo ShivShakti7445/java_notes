@@ -1,0 +1,29 @@
+            // PARAMETRIZED CONSTRUCTOR(type of constructor)
+  class d{
+  int x;String y;// defining of variable
+  d(int a,String c)//parametrized constructor>>>>>>>>>>>>> method 1
+  {
+   x=a;
+   y=c;
+  }
+
+  void print(){
+    System.out.println(" value of x : "+x);
+    System.out.println(" value of  y: "+y);
+   
+  }
+  d(int a,int c)//parametrized constructor >>>>>>>>>>>>>> method 2
+  {
+   System.out.print(a+" "+c);
+  }
+}
+ class A{
+  public static void main (String[] args) {
+    d ref=new d(100,"ram");
+    ref.print();
+   System.out.print("\n");
+   d r=new d(100,200);//yaha par parameter me dono hi integer value hone se compiler ko pata chal gaya hai ki method 2 ko call kiya jaa rha hai
+    
+    
+  }
+}

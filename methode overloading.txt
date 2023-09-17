@@ -1,0 +1,11 @@
+methode overloading >>>>  yah ek aisa concept hai jisme ham ek  method banayenge aur usi methode ko baaar 2 use karenge kewal thodi si change kar 
+ke for example 
+public int add(String a , String b ){
+    return a+b ;
+}
+public int add(int  a , int b ){
+    return a+b ;
+}
+public int add(int  a , int b ,int c){ // multiple parameter
+    return a+b ;
+}

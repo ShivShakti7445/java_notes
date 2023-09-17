@@ -1,0 +1,24 @@
+//to find the factorial of a given no .
+       import java.util.Scanner;
+        class ASCII{//class name kuchh bhi le sakte hai
+           public static  void main(String[] args){
+             int a,fectorial=1;
+             
+              System.out.print("  enter any no.   : ");
+              Scanner sc=new  Scanner (System.in);
+            
+              a=sc.nextInt();
+              
+              for(int i=1;i<=a;i++){
+                fectorial=fectorial*i;
+
+              }
+              System.out.print(" factorial of " + a + " is : " + fectorial );
+            
+              
+
+            }
+           }            
+    
+    
+

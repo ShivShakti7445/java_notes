@@ -1,0 +1,35 @@
+// IF ELSE IF LADDER STATEMENT
+import java.util .Scanner;
+class elseifladderstatement{
+    public static void main(String [] args){
+        int budget;
+        System.out.print("enter the value of budget :");
+        Scanner sc =new Scanner(System.in);
+        budget=sc.nextInt();
+       
+        if(budget>=5000 && budget <=10000){
+  
+       System.out.println("shoping with FAMILY");
+       if(budget>2000 && budget <5000){
+        System.out.println("shoping with SHIKHA and NIKSHA ");
+        
+       }
+
+    
+    
+    }
+       
+   
+    else{
+    System.out.println("  shoping with friends");
+    }
+
+
+ 
+
+
+
+    }
+}
+
+

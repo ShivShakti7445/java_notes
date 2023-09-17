@@ -1,0 +1,81 @@
+
+       //                    TRY BLOCK AND CATCH BLOCK
+// class B{
+//     public static void main(String[] args) {
+//         String str="ankit";
+//         int a=Integer.parseInt(str);// "Integer.parseInt(str)" yaha par "parseInt(str)" iss liye use kar rahe kyoki ham string type varible ko ham integer me convrt kar rahe hai jo ki "Integer " ke class me rahata hai
+//         System.out.print(str);
+//     }
+// }
+
+/*Exception in thread "main" java.lang.(NumberFormatException:) >>> type of exception
+ For input string: "ankit"
+        at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) */
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%555 */
+
+        // class B{
+        //     public static void main(String[] args) {
+        //         String str="ankit";
+        //          try{int a=Integer.parseInt(str);
+        //         System.out.print(str);}
+        //         catch(/*tyoe of exception thrwon by try */NumberFormatException r ){
+        //             System.out.print("only integer type of string is converted into string to integer ");
+        //         }
+        //     }
+        // } // output :
+        /*only integer type of string is converted into string to integer
+        
+        
+        /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%555 */
+
+        // class B{
+        //     public static void main(String[] args) {
+        //         String str="123";//integer type of string 
+        //          try{int a=Integer.parseInt(str);
+        //         System.out.print(str);}
+        //         catch(/*tyoe of exception thrwon by try */NumberFormatException r ){
+        //             System.out.print("only integer type of string is converted into string to integer ");
+        //         }
+        //     }
+        // } 
+
+        // output :  123
+
+
+        /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%555 */
+
+
+        // class B{
+        //     public static void main(String[] args) {
+        //         String str="ankit";
+        //          try{int a=Integer.parseInt(str);
+        //         System.out.println(str);}
+        //         catch( ArithmeticException r ){// agar type of exception ka name wrong likhte hai "catch block " me tab catch block ka ststement bhi nahi execute hoga
+        //             System.out.println("only integer type of string is converted into string to integer ");
+        //         }
+        //         System.out.println("ram prakaash");
+        //     }
+        // } 
+        // output :
+        //Exception in thread "main" java.lang.NumberFormatException: For input string: "ankit"
+        // at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+
+         /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%555 */
+
+
+        class B{
+            public static void main(String[] args) {
+                String str="123456";//integer type of string 
+                 try{int a=Integer.parseInt(str); // ab try block correct hai tab catch blocj execute nahi hoga
+                System.out.println(str);}
+                catch( ArithmeticException r ){// agar type of exception ka name wrong likhte hai "catch block " me tab catch block ka ststement bhi nahi execute hoga
+                    System.out.println("only integer type of string is converted into string to integer ");
+                }
+                System.out.println("ram prakaash");
+            }
+        } 
+        //output :
+        //  123456
+         // ram prakaash
+        //

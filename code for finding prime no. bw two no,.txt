@@ -1,0 +1,45 @@
+// code for finding prime no. b/w two no. 
+import java.util.Scanner;
+//import java.lang.Math
+class b{//class name kuchh bhi le sakte hai
+   public static  void main(String[] args){
+     
+     int n1,n2,j;
+     //double root;
+     Scanner sc=new Scanner(System.in);
+    System.out.print("enter any n1.....");
+    n1=sc.nextInt();
+    System.out.print("enter any n2.....");
+    
+    
+    n2=sc.nextInt();
+    
+      for(int i=n1;i<=n2;i++){
+        for( j=2;j<=i;j++){
+          if(i%j==0)
+                 }
+
+  System.out.println( );
+
+  if(i==j){
+    System.out.print(i+" ");
+  }
+       
+    
+     }
+    }
+  }
+
+  
+
+    
+    
+  
+    
+  
+
+
+     
+     
+    
+  

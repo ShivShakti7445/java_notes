@@ -1,0 +1,22 @@
+//power of a no.
+       import java.util.Scanner;
+       class ASCII{//class name kuchh bhi le sakte hai
+          public static  void main(String[] args){
+             int a,p,result=1;
+             System.out.print("  enter the  no. : ");
+             Scanner sc=new Scanner(System.in);
+             
+             a=sc.nextInt();
+             System.out.print("  enter the  power : ");
+             p=sc.nextInt();
+             for(int i=1;i<=p;i++){
+              result= result*a;
+          
+             }
+             System.out.print("  your power of given no. is : "+result);
+            
+            }
+            }
+    
+    
+

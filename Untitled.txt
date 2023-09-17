@@ -1,0 +1,48 @@
+
+
+//  max. num b/w two no.
+// import java.util.Scanner;
+//  class ASCII{//class name kuchh bhi le sakte hai
+//     public static  void main(String[] args){
+//        int a,b;
+//        System.out.print(" plez enter the first no. : ");
+//        Scanner sc=new Scanner(System.in);
+//        a=sc.nextInt();
+//        System.out.print(" plez enter the second no. : ");
+//        b=sc.nextInt();
+//        if(a>=b){
+        
+//         System.out.print("greatest no. b/w two no. is : "+a);
+
+
+//        }
+//        else{
+        
+//         System.out.print("greatest no. b/w two no. is : "+b);
+//        }
+
+       
+        
+         
+//         }
+        
+//        }
+      
+       //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+       import java.util.Scanner;
+       class ASCII{//class name kuchh bhi le sakte hai
+          public static  void main(String[] args){
+             int a,b,max;
+             System.out.print(" plez enter the first no. : ");
+             Scanner sc=new Scanner(System.in);
+             a=sc.nextInt();
+             System.out.print(" plez enter the second no. : ");
+             b=sc.nextInt();
+             max=(a>=b?a:b);
+             System.out.print(" greatest no. b/w two no. is : "+max);
+            }
+            }
+    
+    
+

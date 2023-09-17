@@ -1,0 +1,64 @@
+                            /* ABSTRACT METHOD */
+// abstract class programming{
+//   public abstract void developer();
+//   public abstract void rank();
+// }
+// class html extends programming{
+// @Override
+// public void developer(){
+//   System.out.println("tim berners lee");}
+//   public void rank(){
+//     System.out.println("3rd");
+// }}
+// class java extends programming{
+//   @Override
+//   public void developer(){
+//     System.out.println("james gosling");
+//   }
+// }
+// class B{
+//   public static void main(String[] args) {
+//     html h=new html();
+//     h.developer();
+//     java j=new java();
+//     j.developer();
+//     }
+// }
+/*output:           voilance of note no. 3
+         B.java:12: error: java is not abstract and does not override abstract method rank() in programming
+class java extends programming{ matlab yaha par java wale class me rank ko override nahi kar raha hai iss liye aisa show kar raha hai
+ */
+
+ /*                  alternate method to avoid note no. 3                  */
+
+ abstract class programming{
+  public abstract void developer();
+  public abstract void rank();
+}
+ abstract class html extends programming{
+@Override
+  public void developer(){
+  System.out.println("tim berners lee");}
+  
+}
+  class java extends html{
+  @Override
+  public void rank(){
+    System.out.println("3rd ");
+  }
+}
+class B{
+  public static void main(String[] args) {
+    
+    java j=new java();
+    j.developer();
+    j.rank();
+   
+      
+       
+        }
+    }
+    /*  out put :
+       tim berners lee
+       3rd 
+     */

@@ -1,0 +1,26 @@
+// IF ELSE STATEMENT
+import java.util .Scanner;
+class ifelsestatement{
+    public static void main(String [] args){
+        int num;
+        System.out.println("enter the value of NUM ");
+        Scanner sc =new Scanner(System.in);
+        num=sc.nextInt();
+        if(num>=18){
+  
+       System.out.println("no need to study ");
+       
+    // System.out.println("you are  not eligible for vote");
+    }
+    else{
+    System.out.println(" Go and start studying BC...! ");
+
+
+ 
+
+
+
+    }
+}
+}
+

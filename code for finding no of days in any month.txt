@@ -1,0 +1,22 @@
+// code for finding no of days in any month
+import java.util.Scanner;
+class b{//class name kuchh bhi le sakte hai
+   public static  void main(String[] args){
+     
+     String c;
+     System.out.print("enter any month : ");
+     Scanner sc=new Scanner(System.in);
+     
+     c=sc.nextLine();
+     switch(c){
+      case "jan":
+      System.out.print("  total no . of day in the month of january is : 31");
+      break;
+      case ( "feb"||"febuary")
+      System.out.print("  total no . of day in the month of febuary is : 28 0r 29");
+      
+      break;
+      
+     }
+    }
+}      

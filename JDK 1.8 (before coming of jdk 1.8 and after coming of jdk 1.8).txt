@@ -1,0 +1,112 @@
+    /*                   JDK 1.8               */
+             // BEFORE COMING OF JDK 1.8
+// interface A{
+//     void a1();//  public+abstract
+//     void a2();
+// }
+// class C implements A{
+//     public void a1(){
+//         System.out.println("ram");
+//     }
+//     public void a2(){
+//         System.out.println("shiv");
+//         System.out.println("\n");
+//     }
+// }
+
+// class D implements A{
+//     public void a1(){
+//         System.out.println("raM");
+//     }
+//     public void a2(){
+//         System.out.println("shiV");
+//     }
+// }
+// class B{
+//     public static void main(String[] args) {
+//         C m=new C(); 
+//         m.a1();m.a2();
+//         D n=new D();
+//         n.a1();n.a2();
+//     }
+// }
+/*
+ram
+shiv
+
+raM
+shiV 
+*/
+
+/*************************************************************************************************************** */
+            /*  AFTER COMOING OF JDK 1.8    */
+//              //     part 1:{DEFAULT KEYWORD + STATIC KEYWORD}
+// interface A{
+//     void a1();//  public+abstract
+//     void a2();
+//     default void a3(){ 
+//         System.out.println("yagnarayan ");//case:1  >>> agar ham class me method a3(), me kuchh bhi nhi likh rahe hai to by default jo ham interface likhe hia wah output ho jayega
+//     };
+//     /*public static void a4(){   >>>>>>>>>>>> iss tarah nahii kar sakte hai
+//         System.out.println("NIRMAL ");*/
+// }
+
+
+// class C implements A{
+//     public void a1(){
+//         System.out.println("ram");
+//     }
+//     public void a2(){
+//         System.out.println("shiv");
+      
+//     }
+//     public void a3(){
+//         System.out.println("rajkumari");/// case:2 >>> agar ham class(A,C,D) me method a3(), me kuchh bhi  likh rahe hai to by default jo ham  likhe hai wah  output ho jayega rather than jo hm interface me likhe hai void a3()ke body me
+//     }
+// }
+
+
+// class D implements A{
+//     public void a1(){
+//         System.out.println("raM");
+//     }
+//     public void a2(){
+//         System.out.println("shiV");
+//     }
+// }
+
+
+// class B{
+//     public static void main(String[] args) {
+//         C m=new C(); 
+//         m.a1();m.a2();m.a3();
+//         D n=new D();
+//         n.a1();n.a2();n.a3(); n.a4();  // static method ko kisi dusre class  ke reference se call nahi kar sakte hai usko sirf kewal interface ke name se hi call hoga hamesa kyouki satic hai
+ //          A.a4();
+//     }
+// }
+
+
+/*
+output of case :1
+ram
+shiv
+yagnarayan
+
+raM
+shiV
+yagnarayan  
+*/
+
+
+/*
+output of case :2
+ram
+shiv
+rajkmari
+
+raM
+shiV
+yagnarayan  
+NIRMALA
+*/

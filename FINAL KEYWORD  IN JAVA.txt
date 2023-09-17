@@ -1,0 +1,84 @@
+         /*             FINAL KEYWORD  IN JAVA          */
+// class B {
+//     public static void main(String[] args) {
+//         final int A=12;//alwys use upper case letter for denoting final variable
+//         System.out.println(A);
+//         //A=23;
+//         System.out.println(A);
+//     }
+// }
+// /*B.java:5: error: cannot assign a value to final variable A
+//         A=23;
+//         ^ */
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+// class C{
+//     void number(){
+//         System.out.println("8840437451");
+//     }
+//       /*final */ void pin(){
+//         System.out.println("3328");
+//     }
+//     } 
+//     class D extends C{
+        
+//         @Override
+//         void number(){
+//             System.out.println("8840437451");
+//         }
+//         @Override
+//         void pin(){
+//             System.out.println("3328");
+//         }
+//     }
+//     class B {
+//         public static void main(String[] args) {
+//             D r=new D();
+//             r.number();
+//             r.pin();
+//         }
+//     }
+    
+     // output when we use final keyword in class C :
+
+/*B.java:28: error: pin() in D cannot override pin() in C
+        void pin(){
+             ^
+  overridden method is final */
+
+   // output when we  not use final keyword  in class C  :
+   /*   8840437451
+         3328 */
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+          final class C{
+            void number(){
+                System.out.println("8840437451");
+            }
+              /*final */ void pin(){
+                System.out.println("3328");
+            }
+            } 
+            class D extends C{
+                
+                @Override
+                void number(){
+                    System.out.println("8840437451");
+                }
+                @Override
+                void pin(){
+                    System.out.println("3328");
+                }
+            }
+            class B {
+                public static void main(String[] args) {
+                    D r=new D();
+                    r.number();
+                    r.pin();
+                }
+            }
+            
+            /*B.java:61: error: cannot inherit from final C
+            class D extends C{
+                            ^
+             1 error */
