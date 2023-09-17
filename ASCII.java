@@ -15,7 +15,7 @@ class ASCII{//class name kuchh bhi le sakte hai
       }
       System.out.print("  digit of given no. is  : "+count
       );
-
+    }
     
    }            
 
