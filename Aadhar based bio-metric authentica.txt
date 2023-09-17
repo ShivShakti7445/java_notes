@@ -1,0 +1,48 @@
+** Aadhar based bio-metric authentication
+
+** applicants are suggested to make sure that the
+Aadhaar number provided is seeded with the Bank Account as the payment
+of Scholarships will be made through Aadhaar Based Payment System, only.
+
+**  ensure the updation of their Aadhaar in NSP portal before
+10.08.2023 to facilitate smooth Aadhaar based authentication.
+
+** Only Aadhaar Update is allowed on NSP
+** Where will the Biometric Authentication drive take place >>>>>>>> At respective Institute in
+CSC Camps
+
+** If my fingerprint did not match during
+Biometric Authentication  >>>>>>>>>>
+Try IRIS Biometric authentication additionally check biometric settings on the official website of UIDAI
+and unlock the Biometric settings
+
+** What is the last date of uploading
+Aadhaar details on NSP portal >>>>>>>>>  05th Aug 2023 – 20th Aug
+2023
+
+** What is the procedure for Biometric
+authentication of applicants
+
+Procedure of Biometric Authentication of applicants >>>>>>>>
+ CSC VLE will conduct camps in the institutions to perform the biometric authentication of the revalidated applicants.
+ Applicants will report to CSC VLE along with Aadhaar number and NSP user Id for Biometric
+Authentication.
+ CSC VLE will validate information reported by Applicants through the NSP biometric authentication
+utility.
+ If the information provided by the Applicants matches with an entry in NSP database, details of
+Applicants will be returned to NSP-BA utility which will be shown to Applicants for confirmation
+and then CSC VLE will take a live photograph of Applicants.
+ CSC VLE will perform biometric authentication for Applicants after successful validation.
+ On successful biometric authentication data will be stored in the CSC database and NSP portal will
+be updated with success/failure of biometric authentication along with other transaction details. 
+
+** What is the procedure for re-validation
+of applications by INO/HoI and
+DNO/SNO
+Procedure of Applicants Re-validation of by INOs/DNOs
+ Successfully biometric authenticated applications will be made available in the INO logins for revalidation.
+ Re- validation will be opened for INO, only if bio-auth of HoI and INO of that institute is successful.
+ SMS will also be sent to these students informing that their application is reverted to their INOs for
+re-validation..
+ In case applications are not re-validated by INO till the last cut-off date of application re-validation
+by INO, the applications will be escalated to SNO’s/DNO’s login for re-validation. 
